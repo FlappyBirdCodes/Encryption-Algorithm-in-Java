@@ -6,7 +6,6 @@ The encryption will follow this cypher table.
 
 ---------------------------------------
 
-
 A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T
 
 B	D	R	P	O	V	Z	M	X	H	S	L	U	Y	T	F	N	K	G	J
@@ -14,8 +13,6 @@ B	D	R	P	O	V	Z	M	X	H	S	L	U	Y	T	F	N	K	G	J
 U	V W	X	Y	Z	0	1	2	3	4	5	6	7	8	9	.	,	-
 
 Q C A I W E 3 0 5 2 9 4 7 6 1 8 , - .
-
-
 
 --------------------------------------
 

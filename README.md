@@ -19,4 +19,5 @@ If the user chooses to encrypt, the letter A will be encrypted as B. On the othe
 
 # Skills 
 -Requires knowledge of Arrays as well Array functions
+
 -Proefficient in file systems in Java (creating files, reading files, checking if a file exists)

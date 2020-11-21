@@ -12,7 +12,7 @@ A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T
 B	D	R	P	O	V	Z	M	X	H	S	L	U	Y	T	F	N	K	G	J
 
 U	V W	X	Y	Z	0	1	2	3	4	5	6	7	8	9	.	,	-
-Q	C	A	I	W	E	3	0	5	2	9	4	7	6	1	8	,	-	.	
+Q C A I W E 3 0 5 2 9 4 7 6 1 8 , - .
 --------------------------------------
 
 If the user chooses to encrypt, the letter A will be encrypted as B. On the other hand, the letter B will decrypted as A. If the letter/number/symbol is not in the cypher table, it will remain the same. 

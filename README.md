@@ -4,7 +4,7 @@ This is an encryption algorithm written in Java. Users can encrypt or decrypt th
 # Cypher Table
 The encryption will follow this cypher table.
 
----------------------------------------\n
+---------------------------------------/n
 A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T
 
 B	D	R	P	O	V	Z	M	X	H	S	L	U	Y	T	F	N	K	G	J

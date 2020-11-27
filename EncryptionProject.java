@@ -3,14 +3,22 @@ import java.io.*;
 
 public class EncryptionProject {
     public static String encrypt_decrypt(String letter, String toEncryptDecrypt) {
+
+        // Arrays that indicate the key-value pairs between decrypted and encrypted letters/symbols
         String[] decrypted = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", " ", ".", ",", "-"};
         String[] encrypted = {"b", "d", "r", "p", "o", "v", "z", "m", "x", "h", "s", "l", "u", "y", "t", "f", "n", "k", "g", "j", "q", "c", "a", "i", "w", "e", "3", "0", "5", "2", "9", "4", "7", "6", "1", "8", ",", "-", ".", " "};
+        
+        // Execeutes if user chooses to encrypt a message
         if (toEncryptDecrypt.equals("1")) {
             int letter_index = Arrays.asList(decrypted).indexOf(letter);
+            
+            // Returns the same letter/symbol if it is not found in the array
             if (letter_index == -1)
                 return letter;
             return encrypted[letter_index];
         }
+
+        // Execeutes if user chooses to decrypt a message
         else {
             int letter_index = Arrays.asList(encrypted).indexOf(letter);
             if (letter_index == -1)
@@ -25,7 +33,6 @@ public class EncryptionProject {
         System.out.println("Enter 1 for Encrypt, 2 for Decrypt:");
 
         String toEncryptDecrypt = new Scanner(System.in).nextLine();
-
         // Reasks for input if input is not either 1 or 2
         while (!toEncryptDecrypt.equals("1") && !toEncryptDecrypt.equals("2")) {
             System.out.println("Invalid input. Please try again and enter either 1 or 2.");
@@ -46,9 +53,7 @@ public class EncryptionProject {
             file_exists = text_file.exists();
         }
 
-        // Reads each line and converts to lower case format
-        Scanner read_file = new Scanner(text_file);
-
+        // Sets filename depending on whether user decides to encrypt or decrypt
         FileWriter new_file;
         String action;
         if (toEncryptDecrypt.equals("1")) {
@@ -60,7 +65,10 @@ public class EncryptionProject {
             action = "Decryption";
         }
 
+        Scanner read_file = new Scanner(text_file);
         while (read_file.hasNextLine()) {
+
+            // Reads each line of the text file
             String each_line = read_file.nextLine();
             each_line = each_line.toLowerCase();
             String[] arr_line = each_line.split("");
@@ -76,5 +84,6 @@ public class EncryptionProject {
         }
         System.out.println(action + " completed");
         new_file.close();
+        read_file.close();
     }
 }

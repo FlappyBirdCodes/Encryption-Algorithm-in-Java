@@ -76,13 +76,14 @@ public class EncryptionProject {
             // Encrypts each letter in the string and adds to new string
             String new_string = "";
             for (int i=0; i<arr_line.length; i++) {
-                String ch = arr_line[i];
-                new_string += encrypt_decrypt(ch, toEncryptDecrypt);
+                String letter = arr_line[i];
+                new_string += encrypt_decrypt(letter, toEncryptDecrypt);
             }
 
             new_file.write(new_string + "\n");
         }
         System.out.println(action + " completed");
+        
         new_file.close();
         read_file.close();
     }

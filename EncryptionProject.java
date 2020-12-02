@@ -1,3 +1,7 @@
+// Name: Oscar Law
+// Date: December 1st, 2020
+// Description: A program that allows users to encrypt and decrypt messages in files
+
 import java.util.*;
 import java.io.*;
 
@@ -83,7 +87,6 @@ public class EncryptionProject {
             new_file.write(new_string + "\n");
         }
         System.out.println(action + " completed");
-        
         new_file.close();
         read_file.close();
     }
